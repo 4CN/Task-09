@@ -1,0 +1,45 @@
+// 0px - 1199px
+@media screen and (max-width: 1199px) {
+  .mobile-section {
+    display: none;
+  }
+}
+
+.todo-title {
+  margin-bottom: 50px;
+}
+
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.todo-description {
+  position: relative;
+  display: block;
+  font-style: normal;
+  @include font(14px, 700, 16px);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &:not(:nth-child(3n)) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+}
+
+.todo-description .todo-img-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.todo-img {
+  display: block;
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+// 0px + 1199px
+@media screen and (max-width: 1199px) {
+  .social-list {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 24px;
+    justify-content: center;
+  }
+}
+
+// 1200px +
+@media screen and (min-width: 1200px) {
+.social-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

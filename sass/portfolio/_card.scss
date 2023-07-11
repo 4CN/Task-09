@@ -1,0 +1,39 @@
+.card-description {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;
+  background: #ffffff;
+}
+
+.card-img {
+  display: block;
+}
+
+.project-name {
+  margin-bottom: 4px;
+}
+
+// 768px - 1199px
+@media screen and (min-width: 768px) {
+  .card-description {
+    width: 354px;
+  }
+
+  .height {
+    height: 136.03px;
+  }
+}
+
+// 1200px +
+@media screen and (min-width: 1200px) {
+  .card-description {
+    width: 370px;
+  }
+
+  .height {
+    height: auto;
+  }
+}
